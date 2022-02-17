@@ -1,0 +1,89 @@
+img{
+    height: 100vh;
+}
+.container{
+    position: relative;
+}
+.inner{
+    background-color: rgba(182, 180, 180, 0.507);
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+.inner h3{
+font-size: 2rem;
+margin: 4px;
+}
+.inner a{
+    padding: 10px;
+}
+.inner button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color: rgba(240, 248, 255, 0.336);
+    transition: all .5s ease;
+}
+.inner button:hover{
+    background-color: rgb(11, 94, 167);
+    color: white;
+}
+.inner button a{
+    text-decoration: none;
+    color: black;
+    transition: all .5s ease;
+}
+.inner button a:hover{
+    color: white;
+}
+.clock{
+    transition: transform 1s linear;
+    transform-origin: top left;;
+}
+.clockFace{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    left: 22%;
+}
+
+.fstHand{
+    height: 40px;
+    width: 65px;
+    position: absolute;
+    top: 35.9%;
+    left: 32%;
+    transform-origin: 0px ;
+    animation: hrspin 4s;
+    
+}
+.secHand{
+    height: 40px;
+    width: 105px;
+    position: absolute;
+    top: 35.9%;
+    left: 32%;
+    transform-origin: 0px ;
+    animation: minspin 4s;
+}
+
+@keyframes hrspin {
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+
+  @keyframes minspin {
+    100% {
+      transform: rotate(390deg);
+    }
+  }
